@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Florence, cursive;
+}
+body{
+    
+    background-color: #33CCFF;
+    width: 100%;
+    height: 800px;
+}
+/* header */
+.header{
+    height: 100px;
+}
+.list-header > li{ 
+
+    float: left;
+    /* display: flex; */
+    margin: 20px;
+    cursor: pointer;
+    list-style-type: none;
+    
+    
+}
+.list-header li > .img-logo{
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    border-radius: 5px;
+}
+.list-header li:hover{
+    color: orangered;
+    
+}
+.icon-pb> a{
+   padding-right: 10px;
+   text-decoration: none;
+   
+}
+.txt1{
+   
+    margin-bottom: 3px;
+    width: 500px;
+    margin-left: 40px;
+    /* border-radius: 10px; */
+    height: 30px;
+   border: none;
+   outline: none;
+   border-bottom: 2px solid #363636;
+    background: transparent;
+    
+     
+}
+.list-header > .txt1{
+   margin-top: -5px;
+}
+.icon-thunder{
+   
+}
+.icon-thunder > i{
+    font-size: 25px;
+    border-radius: 50%;
+}
+.list-header > .icon-volume{
+    margin-left: 250px;
+    font-size: 20px;
+    
+}
+.icon-list-2{
+    font-size: 20px;
+}   
+.list-header .icon-bell{
+    
+    margin-left: 70px;
+}
+.list-content-1{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    width: 900px;
+    height: 650px;
+    position: absolute;
+    top:50%;
+    left: 31%;
+    
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0px 10px  25px rgba(0,0,0,0.6);
+}
+
+.list-nav1 > li{
+    float: left;
+    margin: 15px;
+    cursor: pointer;
+    list-style-type: none;
+}
+.list-nav1 > .icon-search{
+    float: right;
+}
+.list-nav1 li:hover{
+    color: orangered;
+    
+}
+.list-nav2{
+    margin-left: 40px;
+}
+.list-nav2 > li {
+    float: left;
+    margin:20px ;
+    list-style-type: none;
+     background-color: #33FFFF;
+     padding: 25px;
+     border-radius: 10px;
+     margin-left: 10px;
+     margin-bottom:30px;
+    
+    
+}
+.list-nav3{
+
+    margin-top: 180px;
+   display: flex;
+   margin-left: 35px;
+}
+.list-nav3 > li{
+    
+    margin: 15px;
+    
+    list-style-type: none;
+     background-color: #33FFFF;
+      padding: 10px; 
+     border-radius: 10px;
+      margin-bottom: 40px; 
+    
+}
+.list-nav4{
+    margin-left:35px;
+}
+.list-nav4 > li{
+    
+    float: left;
+    margin:13px ;
+    list-style-type: none;
+     background-color: #33FFFF;
+     padding: 25px;
+     border-radius: 10px;
+     
+    
+}
+
+
+.list-content-2{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    width: 550px;
+    height: 650px;
+    position: absolute;
+    top:50%;
+    
+    left: 80%;
+    
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px  25px rgba(0,0,0,0.6);
+    display: none;
+}
+.list-content-nav2{
+    display: flex;
+   list-style-type: none;
+}
+.btn-table{
+     background-color: #33CCFF; 
+    border-radius: 5px;
+   
+   margin: 20px;
+   
+    height: 20px;
+}
+.btn-table:hover{
+ color: orangered;
+}
+.txt-search{
+    margin:20px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 20px;
+}
+.icon-plus{
+    margin: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.icon-cart{
+    margin: 20px;
+cursor: pointer;
+text-decoration: none;
+}
+     .icon-list{
+    margin: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.icon-plus:hover{
+color: orangered;
+}
+ .icon-cart:hover{
+    color: orangered;
+ }
+ .icon-list:hover{
+    color: orangered;
+ }
+/* xữ lý cho list food  lau 1*/
+.list-food-room1{
+
+    
+}
+.list-food-nav-room1{
+    margin-top: 20px;
+   margin: 20px;
+   display: flex;
+   
+}
+.list-food-nav-room2{
+    margin-top: 10px;
+    margin: 20px;
+    display: flex;
+    padding-top: 50px;
+}
+.img-remove{
+    width: 20px;
+    height:20px;
+    margin-right: 10px;
+
+}
+.number-food{
+    margin-right: 15px;
+}
+.txt-food{
+    margin-right: 10px;
+    color: #FF0000;
+    
+}
+.list-food-nav-room1 > .img-cua{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+   margin-top: -10px;
+    
+}
+.list-food-nav-room2> .img-suplo{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-top: -15px;
+}
+.btn-plus{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.txt-number{
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-right: 5px;
+}
+.btn-minus{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+   cursor: pointer;
+}
+/* footer cho list-content-2 of xữ lý món ăn */
+
+.list-footer1{
+   padding-top:120px;
+    margin:20px;
+    display: flex;
+    
+    
+}
+.img-tray{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    
+}
+.img-cation{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.img-people{
+    width: 20px;
+    height: 20px;
+    margin-right: 100px;
+}
+.img-pencil{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.txt-thanhtien{
+    height: 30px;
+}
+
+.list-footer2{
+   
+    margin: 20px;
+    display: flex; 
+}
+.btn-footer1{
+    width: 250px;
+    height: 50px;
+    background-color: #009900;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btn-footer2{
+    width: 250px;
+    height: 50px;
+    background-color: #0099FF;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #fff;
+    border: none;
+}
+/* xữ lý cho sân vườn trong ql nhà hàng  */
+.list-content-3{
+    display: none;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    width: 550px;
+    height: 650px;
+    position: absolute;
+    top:50%;
+    
+    left: 80%;
+    
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px  25px rgba(0,0,0,0.6);
+}
+/* xữ lý cho tầng 2 trong ql nhà hàng */
+.list-content-4{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    width: 550px;
+    height: 650px;
+    position: absolute;
+    top:50%;
+    
+    left: 80%;
+    
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px  25px rgba(0,0,0,0.6);
+    display: none;
+}
+.list-content-103{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    width: 550px;
+    height: 650px;
+    position: absolute;
+    top:50%;
+    
+    left: 80%;
+    
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 10px  25px rgba(0,0,0,0.6);
+    display: none;
+}

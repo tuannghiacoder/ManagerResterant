@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Restaurant manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <ul class="list-header">
+          
+            <li class="icon-pb"><i class="fa-solid fa-table"></i><a href="" target="loadpage">Phòng Bàn</a></li>
+            <li  class="icon-pb"><i class="fa-solid fa-poo"></i><a href="thucdon.html" target="loadpage">Thực Đơn</a></li>
+            <li><input class="txt1" type="text" placeholder="Tìm món"></li>
+            <li class="icon-thunder"><i class="fa-solid fa-cloud-bolt"></i></li>
+            <li class="icon-volume"><i class="fa-solid fa-volume-xmark"></i></li>
+            <li class="icon-list-2"><i class="fa-solid fa-exclamation"></i></li>
+            <li class="icon-list-2"><i class="fa-solid fa-spinner"></i></li>
+            <li class="icon-list-2"><i class="fa-regular fa-bell"></i></li>
+            <li class="icon-bell"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+    </div>
+   
+ <!-- tạo một cái chung cho quãn lý dữ án nhà hàng -->
+  <div class="container">
+    
+   <div class="list-content-1"> 
+ 
+    
+   <ul class="list-nav1">
+    <li>Tất cả</li>
+    <li>KHU LẦU 1</li>
+    <li>KHU SÂN VƯỜN</li>
+    <li>KHU LẦU 2 </li>
+    <li>PHÒNG LẠNH(NO)</li>
+    <li class="icon-search"><i class="fa-solid fa-magnifying-glass"></i></li>
+  </ul><br><br><br>
+      
+  <ul class="list-nav2">
+    <li id="lau102"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt="">Lầu 102</li>
+    <li onclick="lau103()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Lầu 103</li>
+    <li onclick="lau104()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt="">Lầu  104</li>
+    <li onclick="lau105()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt="">Lầu  105</li>
+    <li onclick="lau106()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt="">Lầu  106</li>
+    <li onclick="lau107()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt="">Lầu  107</li>
+  </ul><br>
+  <!-- tạo danh sách cho phòng sân vườn -->
+  <ul class="list-nav3">
+    <li id="sanvuon1"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Sân Vườn 1</li>
+    <li onclick="sanvuon1()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Sân Vườn 2</li>
+    <li onclick="sanvuon1()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Sân Vườn 3</li>
+    <li onclick="sanvuon1()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Sân Vườn 4</li>
+    <li onclick="sanvuon1()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Sân Vườn 5</li>
+    <li onclick="sanvuon1()"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Sân Vườn 6</li>
+  </ul>
+  <!-- tạo danh sách cho lầu trong nhà hàng -->
+  <ul class="list-nav4">
+    <li id="lau202"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Lầu 202</li>
+    <li id="lau202"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Lầu 203</li>
+    <li id="lau202"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Lầu 204</li>
+    <li id="lau202"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Lầu 205</li>
+    <li id="lau202"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Lầu 206</li>
+    <li id="lau202"><img class="img-icon1" src="./images/tablet-landscape-outline.svg" alt=""> Lầu 207</li>
+  </ul>
+    
+  </div> 
+
+      <div id="list-content-2modal" class="list-content-2">
+        <ul class="list-content-nav2">
+          <li><button class="btn-table"><i class="fa-solid fa-table"></i>Phòng tìm kiếm</button></li>
+          <li><input type="text" class="txt-search" placeholder="Tìm khách hàng(F4)"></li>
+          <li class="icon-plus"><i class="fa-solid fa-plus"></i></li>
+          <li class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></li>
+          <li class="icon-list"><i class="fa-solid fa-list"></i></li>
+          <li></li>
+        </ul>
+        <!-- xữ lý cho chuỗi thức ăn -->
+        <div class="list-food-room1">
+        <div class="list-food-nav-room1">
+          <!-- xữ lý cho món ăn cua -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">1.</p>
+         <p class="txt-food">Càng cua bách hoa </p>
+         <img class="img-cua" src="./images/img_cua-removebg-preview.png" alt="">
+        <input onclick="cong1()" class="btn-plus" type="button" value="+">
+        <input id="kq1" class="txt-number" type="text" value="0">
+        <input onclick="tru1()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">120,000đ</p>
+        </div><br>
+        <!-- xữ lý món ăn  -->
+        <div class="list-food-nav-room2">
+          <!-- xữ lý cho món ăn -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">2.</p>
+         <p class="txt-food">Súp hải sản hoàng kim</p>
+         <img class="img-suplo" src="./images/img-suplo-removebg-preview.png" alt="">
+        <input onclick="cong2()" class="btn-plus" type="button" value="+">
+        <input id="kq2" class="txt-number" type="text" value="0">
+        <input onclick="tru2()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">220,000đ</p>
+        </div>
+        <!-- xữ lý nước uống cho lầu 102 -->
+        <div class="list-food-nav-room2">
+          <!-- xữ lý cho món ăn -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">3.</p>
+         <p class="txt-food">Trà hoa cúc</p>
+         <img class="img-suplo" src="./images/img-trahoacuc-removebg-preview.png" alt="">
+        <input onclick="cong3()" class="btn-plus" type="button" value="+">
+        <input id="kq3" class="txt-number" type="text" value="0">
+        <input onclick="tru3()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">24,000đ</p>
+        </div>
+      </div>
+      <!-- xữ lý chuổi thức ăn cho phần sươn vườn -->
+      
+        <!-- footer cho xữ lý thức ăn -->
+        <div class="list-footer1">
+          <img class="img-tray" src="./images/file-tray-stacked-outline.svg" alt="">
+          <img class="img-cation" src="./images/notifications-outline.svg" alt=""><br>
+           <img class="img-pencil" src="./images/pencil-outline.svg" alt="">
+           <img class="img-people" src="./images/people-circle-outline (1).svg" alt="">
+           <p class="txt-thanhtien">Tổng tiền: <input id="kq4" type="text" class="txt-thanhtien"></p>
+        </div>
+        <div class="list-footer2">
+          <button class="btn-footer1" type="button" onclick="btnThanhTien()"><i class="fa-solid fa-money-bill"></i>Yêu cầu thanh toán</button>
+           <button class="btn-footer2" type="button"><i class="fa-regular fa-bell"></i>Thông báo</button>
+        </div>
+      </div>
+
+
+
+
+      <!-- xữ lý cho nhà sân vườn -->
+      <div id="list-content-3modal" class="list-content-3">
+        <ul class="list-content-nav2">
+          <li><button class="btn-table"><i class="fa-solid fa-table"></i>Phòng tìm kiếm</button></li>
+          <li><input type="text" class="txt-search" placeholder="Tìm khách hàng(F4)"></li>
+          <li class="icon-plus"><i class="fa-solid fa-plus"></i></li>
+          <li class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></li>
+          <li class="icon-list"><i class="fa-solid fa-list"></i></li>
+          <li></li>
+        </ul>
+        <!-- xữ lý cho chuỗi thức ăn -->
+        <div class="list-food-room1">
+        <div class="list-food-nav-room1">
+          <!-- xữ lý cho món ăn cua -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">1.</p>
+         <p class="txt-food">BÔNG ĐIÊN ĐIỂN XÀO TÉP ĐỒNG </p>
+         <img class="img-cua" src="./images/img-bongdiendien-removebg-preview.png" alt="">
+        <input onclick="cong1sv()" class="btn-plus" type="button" value="+">
+        <input id="kq1sv" class="txt-number" type="text" value="0">
+        <input onclick="tru1sv()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">138,000đ</p>
+        </div><br>
+        
+        <!-- xữ lý món ăn  -->
+        <div class="list-food-nav-room2">
+          <!-- xữ lý cho món ăn -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">2.</p>
+         <p class="txt-food">Nom bo bop thau</p>
+         <img class="img-suplo" src="./images/nom-bo-bop-thau_c618456d2e0943329e59af769153b57f_master-removebg-preview.png" alt="">
+        <input onclick="cong2sv()" class="btn-plus" type="button" value="+">
+        <input id="kq2sv" class="txt-number" type="text" value="0">
+        <input onclick="tru2sv()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">179,000đ</p>
+        </div>
+        <!-- xữ lý nước uống cho lầu 102 -->
+        <div class="list-food-nav-room2">
+          <!-- xữ lý cho món ăn -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">3.</p>
+         <p class="txt-food">Nước ép hoa quả</p>
+         <img class="img-suplo" src="./images/sinh-to-removebg-preview.png" alt="">
+        <input onclick="cong3sv()" class="btn-plus" type="button" value="+">
+        <input id="kq3sv" class="txt-number" type="text" value="0">
+        <input onclick="tru3sv()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">30,000đ</p>
+        </div>
+      </div>
+     
+        
+        <!-- footer cho xữ lý thức ăn -->
+        <div class="list-footer1">
+          <img class="img-tray" src="./images/file-tray-stacked-outline.svg" alt="">
+          <img class="img-cation" src="./images/notifications-outline.svg" alt=""><br>
+           <img class="img-pencil" src="./images/pencil-outline.svg" alt="">
+           <img class="img-people" src="./images/people-circle-outline (1).svg" alt="">
+           <p class="txt-thanhtien">Tổng tiền: <input id="kq4sv" type="text" class="txt-thanhtien"></p>
+        </div>
+        <div class="list-footer2">
+          <button class="btn-footer1" type="button" onclick="btnThanhTiensv()"><i class="fa-solid fa-money-bill"></i>Yêu cầu thanh toán</button>
+           <button class="btn-footer2" type="button"><i class="fa-regular fa-bell"></i>Thông báo</button>
+        </div>
+      </div>
+
+
+      
+      <!-- xữ lý chuổi thức ăn cho nhà tầng2 -->
+      <div id="list-content-4modal" class="list-content-4">
+        <ul class="list-content-nav2">
+          <li><button class="btn-table"><i class="fa-solid fa-table"></i>Phòng tìm kiếm</button></li>
+          <li><input type="text" class="txt-search" placeholder="Tìm khách hàng(F4)"></li>
+          <li class="icon-plus"><i class="fa-solid fa-plus"></i></li>
+          <li class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></li>
+          <li class="icon-list"><i class="fa-solid fa-list"></i></li>
+          <li></li>
+        </ul>
+        <!-- xữ lý cho chuỗi thức ăn -->
+        <div class="list-food-room1">
+        <div class="list-food-nav-room1">
+          <!-- xữ lý cho món ăn cua -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">1.</p>
+         <p class="txt-food">Su si thập cẫm </p>
+         <img class="img-cua" src="./images/susi-removebg-preview.png" alt="">
+        <input onclick="cong1lau2()" class="btn-plus" type="button" value="+">
+        <input id="kq1lau2" class="txt-number" type="text" value="0">
+        <input onclick="tru1lau2()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">440,000đ</p>
+        </div><br>
+        
+        <!-- xữ lý món ăn  -->
+        <div class="list-food-nav-room2">
+          <!-- xữ lý cho món ăn -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">2.</p>
+         <p class="txt-food">Sup hoàng kim</p>
+         <img class="img-suplo" src="./images/sup-removebg-preview.png" alt="">
+        <input onclick="cong2lau2()" class="btn-plus" type="button" value="+">
+        <input id="kq2lau2" class="txt-number" type="text" value="0">
+        <input onclick="tru2lau2()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">220,000đ</p>
+        </div>
+        <!-- xữ lý nước uống cho lầu 102 -->
+        <div class="list-food-nav-room2">
+          <!-- xữ lý cho món ăn -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">3.</p>
+         <p class="txt-food">Sinh tố chuối</p>
+         <img class="img-suplo" src="./images/sinhtochoui-removebg-preview.png" alt="">
+        <input onclick="cong3lau2()" class="btn-plus" type="button" value="+">
+        <input id="kq3lau2" class="txt-number" type="text" value="0">
+        <input onclick="tru3lau2()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">50,000đ</p>
+        </div>
+      </div>
+     
+        
+        <!-- footer cho xữ lý thức ăn -->
+        <div class="list-footer1">
+          <img class="img-tray" src="./images/file-tray-stacked-outline.svg" alt="">
+          <img class="img-cation" src="./images/notifications-outline.svg" alt=""><br>
+           <img class="img-pencil" src="./images/pencil-outline.svg" alt="">
+           <img class="img-people" src="./images/people-circle-outline (1).svg" alt="">
+           <p  class="txt-thanhtien">Tổng tiền: <input id="kq4lau2" type="text" class="txt-thanhtien"></p>
+        </div>
+        <div class="list-footer2">
+          <button class="btn-footer1" type="button" onclick="btntongtienlau2()"><i class="fa-solid fa-money-bill"></i>Yêu cầu thanh toán</button>
+           <button class="btn-footer2" type="button"><i class="fa-regular fa-bell"></i>Thông báo</button>
+        </div>
+      </div>
+
+
+
+
+      <!-- xữ lý chuổi thức ăn cho nhà 103 -->
+      <div id="list-content-103 modal" class="list-content-103">
+        <ul class="list-content-nav2">
+          <li><button class="btn-table"><i class="fa-solid fa-table"></i>Phòng tìm kiếm</button></li>
+          <li><input type="text" class="txt-search" placeholder="Tìm khách hàng(F4)"></li>
+          <li class="icon-plus"><i class="fa-solid fa-plus"></i></li>
+          <li class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></li>
+          <li class="icon-list"><i class="fa-solid fa-list"></i></li>
+          <li></li>
+        </ul>
+        <!-- xữ lý cho chuỗi thức ăn -->
+        <div class="list-food-room1">
+        <div class="list-food-nav-room1">
+          <!-- xữ lý cho món ăn cua -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">1.</p>
+         <p class="txt-food">Su si thập cẫm </p>
+         <img class="img-cua" src="./images/susi-removebg-preview.png" alt="">
+        <input onclick="cong1lau2()" class="btn-plus" type="button" value="+">
+        <input id="kq1lau2" class="txt-number" type="text" value="0">
+        <input onclick="tru1lau2()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">440,000đ</p>
+        </div><br>
+        
+        <!-- xữ lý món ăn  -->
+        <div class="list-food-nav-room2">
+          <!-- xữ lý cho món ăn -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">2.</p>
+         <p class="txt-food">Sup hoàng kim</p>
+         <img class="img-suplo" src="./images/sup-removebg-preview.png" alt="">
+        <input onclick="cong2lau2()" class="btn-plus" type="button" value="+">
+        <input id="kq2lau2" class="txt-number" type="text" value="0">
+        <input onclick="tru2lau2()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">220,000đ</p>
+        </div>
+        <!-- xữ lý nước uống cho lầu 102 -->
+        <div class="list-food-nav-room2">
+          <!-- xữ lý cho món ăn -->
+         <img src="./images/remove.svg" class="img-remove" alt="">
+         <p class="number-food">3.</p>
+         <p class="txt-food">Sinh tố chuối</p>
+         <img class="img-suplo" src="./images/sinhtochoui-removebg-preview.png" alt="">
+        <input onclick="cong3lau2()" class="btn-plus" type="button" value="+">
+        <input id="kq3lau2" class="txt-number" type="text" value="0">
+        <input onclick="tru3lau2()"  class="btn-minus" type="button" value="-">
+        <p class="food-money">50,000đ</p>
+        </div>
+      </div>
+     
+        
+        <!-- footer cho xữ lý thức ăn -->
+        <div class="list-footer1">
+          <img class="img-tray" src="./images/file-tray-stacked-outline.svg" alt="">
+          <img class="img-cation" src="./images/notifications-outline.svg" alt=""><br>
+           <img class="img-pencil" src="./images/pencil-outline.svg" alt="">
+           <img class="img-people" src="./images/people-circle-outline (1).svg" alt="">
+           <p  class="txt-thanhtien">Tổng tiền: <input id="kq4lau2" type="text" class="txt-thanhtien"></p>
+        </div>
+        <div class="list-footer2">
+          <button class="btn-footer1" type="button" onclick="btntongtienlau2()"><i class="fa-solid fa-money-bill"></i>Yêu cầu thanh toán</button>
+           <button class="btn-footer2" type="button"><i class="fa-regular fa-bell"></i>Thông báo</button>
+        </div>
+      </div>
+  </div>
+  <script src="./main.js"></script>
+  <!-- cdn taiwindcss -->
+<!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+</body>
+</html>
